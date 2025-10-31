@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22522" systemVersion="22G630" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Actividad" representedClassName="Actividad" syncable="YES" codeGenerationType="class">
+        <attribute name="categoria" optional="YES" attributeType="String"/>
+        <attribute name="consumoPromedio" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String"/>
+        <attribute name="recomendacion" optional="YES" attributeType="String"/>
+        <relationship name="consumos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Consumo"/>
+    </entity>
+    <entity name="Consumo" representedClassName="Consumo" syncable="YES" codeGenerationType="class">
+        <attribute name="alertaGenerada" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="comentario" optional="YES" attributeType="String"/>
+        <attribute name="fecha" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="litros" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="actividad" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Actividad"/>
+        <relationship name="persona" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Persona"/>
+    </entity>
+    <entity name="Persona" representedClassName="Persona" syncable="YES" codeGenerationType="class">
+        <attribute name="avantar" optional="YES" attributeType="Binary"/>
+        <attribute name="colorTema" optional="YES" attributeType="String"/>
+        <attribute name="nombre" optional="YES" attributeType="String"/>
+        <relationship name="consumos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Consumo"/>
+    </entity>
+</model>
