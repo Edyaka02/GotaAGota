@@ -65,7 +65,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		247BC4262EB5E464006E9378 /* Modelos */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Modelos; sourceTree = "<group>"; };
+		247BC3C62EB598E2006E9378 /* Modelos */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Modelos; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +132,7 @@
 		AC2DC4C82EB56C6F00B98DAD /* GotaAGota */ = {
 			isa = PBXGroup;
 			children = (
-				247BC4262EB5E464006E9378 /* Modelos */,
+				247BC3C62EB598E2006E9378 /* Modelos */,
 				247BC3BB2EB59772006E9378 /* Controladores */,
 				AC2DC4C92EB56C6F00B98DAD /* AppDelegate.h */,
 				AC2DC4CA2EB56C6F00B98DAD /* AppDelegate.m */,
@@ -161,6 +161,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				247BC3C62EB598E2006E9378 /* Modelos */,
 			);
 			name = GotaAGota;
 			productName = GotaAGota;
