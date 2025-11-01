@@ -14,6 +14,9 @@
     [super viewDidLoad];
 
     // Do any additional setup after loading the view.
+    NSStoryboard *storyboard = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
+    NSWindowController *registroWC = [storyboard instantiateControllerWithIdentifier:@"RegistroWindow"];
+    [registroWC showWindow:nil];
 }
 
 
@@ -28,7 +31,6 @@
     NSStoryboard *storyboard = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
     NSWindowController *registroWC = [storyboard instantiateControllerWithIdentifier:@"RegistroWindow"];
     [registroWC showWindow:nil];
-
 
 }
 @end
