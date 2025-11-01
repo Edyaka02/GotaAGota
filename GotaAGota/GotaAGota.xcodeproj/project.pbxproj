@@ -11,7 +11,6 @@
 		247BC3FF2EB599AD006E9378 /* EstadisticasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 247BC3FE2EB599AD006E9378 /* EstadisticasViewController.m */; };
 		247BC4022EB599C9006E9378 /* InicioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 247BC4012EB599C9006E9378 /* InicioViewController.m */; };
 		247BC4052EB59B99006E9378 /* PersonaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 247BC4042EB59B99006E9378 /* PersonaViewController.m */; };
-		247BC4092EB59BAE006E9378 /* RecomendacionesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 247BC4082EB59BAE006E9378 /* RecomendacionesViewController.xib */; };
 		247BC40A2EB59BAE006E9378 /* RecomendacionesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 247BC4072EB59BAE006E9378 /* RecomendacionesViewController.m */; };
 		AC2DC4CB2EB56C6F00B98DAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2DC4CA2EB56C6F00B98DAD /* AppDelegate.m */; };
 		AC2DC4CE2EB56C6F00B98DAD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2DC4CD2EB56C6F00B98DAD /* ViewController.m */; };
@@ -49,7 +48,6 @@
 		247BC4042EB59B99006E9378 /* PersonaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonaViewController.m; sourceTree = "<group>"; };
 		247BC4062EB59BAE006E9378 /* RecomendacionesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecomendacionesViewController.h; sourceTree = "<group>"; };
 		247BC4072EB59BAE006E9378 /* RecomendacionesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecomendacionesViewController.m; sourceTree = "<group>"; };
-		247BC4082EB59BAE006E9378 /* RecomendacionesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecomendacionesViewController.xib; sourceTree = "<group>"; };
 		AC2DC4C62EB56C6F00B98DAD /* GotaAGota.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GotaAGota.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC2DC4C92EB56C6F00B98DAD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AC2DC4CA2EB56C6F00B98DAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 				247BC4042EB59B99006E9378 /* PersonaViewController.m */,
 				247BC4062EB59BAE006E9378 /* RecomendacionesViewController.h */,
 				247BC4072EB59BAE006E9378 /* RecomendacionesViewController.m */,
-				247BC4082EB59BAE006E9378 /* RecomendacionesViewController.xib */,
 			);
 			path = Controladores;
 			sourceTree = "<group>";
@@ -252,7 +249,6 @@
 			files = (
 				AC2DC4D32EB56C9800B98DAD /* Assets.xcassets in Resources */,
 				AC2DC4D62EB56C9800B98DAD /* Main.storyboard in Resources */,
-				247BC4092EB59BAE006E9378 /* RecomendacionesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
