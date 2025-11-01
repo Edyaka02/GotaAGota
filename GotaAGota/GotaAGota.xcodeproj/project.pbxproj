@@ -14,6 +14,7 @@
 		247BC40A2EB59BAE006E9378 /* RecomendacionesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 247BC4072EB59BAE006E9378 /* RecomendacionesViewController.m */; };
 		247BC4362EB688AE006E9378 /* Baloo2-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 247BC4342EB688AE006E9378 /* Baloo2-Bold.ttf */; };
 		247BC4372EB688AE006E9378 /* Baloo2-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 247BC4352EB688AE006E9378 /* Baloo2-Regular.ttf */; };
+		247BC43F2EB6A023006E9378 /* GraficaSemanalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 247BC43E2EB6A023006E9378 /* GraficaSemanalView.m */; };
 		AC2DC4CB2EB56C6F00B98DAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2DC4CA2EB56C6F00B98DAD /* AppDelegate.m */; };
 		AC2DC4CE2EB56C6F00B98DAD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2DC4CD2EB56C6F00B98DAD /* ViewController.m */; };
 		AC2DC4D12EB56C6F00B98DAD /* GotaAGota.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC2DC4CF2EB56C6F00B98DAD /* GotaAGota.xcdatamodeld */; };
@@ -53,6 +54,8 @@
 		247BC4342EB688AE006E9378 /* Baloo2-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Baloo2-Bold.ttf"; sourceTree = "<group>"; };
 		247BC4352EB688AE006E9378 /* Baloo2-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Baloo2-Regular.ttf"; sourceTree = "<group>"; };
 		247BC4382EB6896E006E9378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		247BC43D2EB6A023006E9378 /* GraficaSemanalView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraficaSemanalView.h; sourceTree = "<group>"; };
+		247BC43E2EB6A023006E9378 /* GraficaSemanalView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraficaSemanalView.m; sourceTree = "<group>"; };
 		AC2DC4C62EB56C6F00B98DAD /* GotaAGota.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GotaAGota.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC2DC4C92EB56C6F00B98DAD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AC2DC4CA2EB56C6F00B98DAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -120,6 +123,15 @@
 			path = Recursos;
 			sourceTree = "<group>";
 		};
+		247BC4392EB69FC3006E9378 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				247BC43D2EB6A023006E9378 /* GraficaSemanalView.h */,
+				247BC43E2EB6A023006E9378 /* GraficaSemanalView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		AC2DC4BD2EB56C6F00B98DAD = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +153,7 @@
 		AC2DC4C82EB56C6F00B98DAD /* GotaAGota */ = {
 			isa = PBXGroup;
 			children = (
+				247BC4392EB69FC3006E9378 /* Views */,
 				247BC4382EB6896E006E9378 /* Info.plist */,
 				247BC4332EB68861006E9378 /* Recursos */,
 				247BC4262EB5E464006E9378 /* Modelos */,
@@ -293,6 +306,7 @@
 			files = (
 				AC2DC4CE2EB56C6F00B98DAD /* ViewController.m in Sources */,
 				247BC40A2EB59BAE006E9378 /* RecomendacionesViewController.m in Sources */,
+				247BC43F2EB6A023006E9378 /* GraficaSemanalView.m in Sources */,
 				AC2DC4D12EB56C6F00B98DAD /* GotaAGota.xcdatamodeld in Sources */,
 				247BC4022EB599C9006E9378 /* InicioViewController.m in Sources */,
 				247BC3FF2EB599AD006E9378 /* EstadisticasViewController.m in Sources */,

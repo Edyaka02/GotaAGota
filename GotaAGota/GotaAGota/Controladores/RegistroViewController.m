@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "Consumo+CoreDataClass.h"
 #import "Actividad+CoreDataClass.h"
+#import "GraficaSemanalView.h"
 
 @interface RegistroViewController ()
 
@@ -184,6 +185,40 @@
 
     [self.managedObjectContext save:nil];
     NSLog(@"🗑️ Actividades antiguas eliminadas");
+}
+
+
+- (NSDictionary *)obtenerConsumoSemanal {
+    NSManagedObjectContext *context = ((AppDelegate *)NSApp.delegate).persistentContainer.viewContext;
+    NSDate *hoy = [NSDate date];
+    NSDate *hace7Dias = [hoy dateByAddingTimeInterval:-7*24*60*60];
+
+    NSFetchRequest *fetch = [NSFetchRequest fetchRequestWithEntityName:@"Consumo"];
+    fetch.predicate = [NSPredicate predicateWithFormat:@"fecha >= %@", hace7Dias];
+
+    NSError *error = nil;
+    NSArray *resultados = [context executeFetchRequest:fetch error:&error];
+
+    NSMutableDictionary *consumoPorDia = [NSMutableDictionary dictionary];
+    NSDateFormatter *formato = [[NSDateFormatter alloc] init];
+    formato.dateFormat = @"dd/MM";
+
+    for (Consumo *registro in resultados) {
+        NSString *clave = [formato stringFromDate:registro.fecha];
+        consumoPorDia[clave] = @([consumoPorDia[clave] doubleValue] + registro.litros);
+    }
+
+    return consumoPorDia;
+}
+
+
+- (void)mostrarEstadisticas {
+    NSDictionary *datosSemanal = [self obtenerConsumoSemanal];
+
+    GraficaSemanalView *graficaSemanal = [[GraficaSemanalView alloc] initWithFrame:NSMakeRect(0, 0, 300, 250)];
+    graficaSemanal.datosPorDia = datosSemanal;
+
+    [self.estadisticasStackView addArrangedSubview:graficaSemanal];
 }
 
 
